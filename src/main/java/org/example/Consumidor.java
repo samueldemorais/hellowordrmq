@@ -28,6 +28,7 @@ public class Consumidor {
 
         //Consome da fila
         canal.basicConsume(NOME_FILA, true, callback, consumerTag -> {});
+        System.out.println("Continuarei executando outras atividades enquanto não chega mensagem...");
     }
 }
 
